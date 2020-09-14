@@ -24,4 +24,8 @@ def move
   
 end
 
+def turn(board)
+  puts "Please Enter 1-9:"
+end
+
 
