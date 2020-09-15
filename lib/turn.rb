@@ -35,11 +35,7 @@ def turn(board)
   if valid_move?(board, index) == true
     move(board, index, current_player = "X")
   else
-    until valid_move?(board, index) == true
-    puts "Invalid Move, Please enter 1-9:"
-    input = gets
-    index = input_to_index(input)
-    valid_move?(board, index)
+    turn(board)
     end
   end
 end
