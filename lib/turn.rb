@@ -32,6 +32,10 @@ def turn(board)
   input = gets
   index = input_to_index(input)
   valid_move?(board, index)
+  if valid_move?(board, index) == true
+    move(board, index, current_player = "X")
+  else
+    puts "Invalid Move, Please enter 1-9:"
 end
 
 
