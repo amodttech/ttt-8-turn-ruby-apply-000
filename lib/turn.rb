@@ -23,14 +23,14 @@ def move(board, index, current_player = "X")
   board[index] = current_player
 end
 
-def input_to_index(input)
-  input.to_i - 1
+def input_to_index(user_input)
+  user_input.to_i - 1
 end
 
 def turn(board)
   puts "Please enter 1-9:"
   input = gets
-  index = input_to_index(input)
+  index = input_to_index(user_input)
   valid_move?(board, index)
   if valid_move?(board, index) == true
     move(board, index, current_player = "X")
