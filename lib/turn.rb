@@ -25,11 +25,14 @@ end
 
 def input_to_index(input)
   input.to_i - 1
+  input = index
 end
 
 def turn(board)
   puts "Please enter 1-9:"
   input = gets
+  input_to_index(input)
+  valid_move?(board, index)
 end
 
 
